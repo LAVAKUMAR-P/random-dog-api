@@ -8,14 +8,12 @@ document.body.append(heading);
 //to creat card in UI
 function loadUsers(users) {
     let user=users;
-    console.log("load"+user)
     var carbagecheck = document.getElementsByClassName('user-list');
     if (carbagecheck.length > 0) {
         document.querySelector(".user-list").remove();
       }
         const userList = document.createElement("div");
         userList.className = "user-list";
-               console.log(users);
                const userContainer = document.createElement("div");
                userContainer.className = "user-container";
                userContainer.innerHTML= `
