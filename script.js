@@ -44,11 +44,9 @@ async function getUser(){
     );
     try{
         const users=await data.json();
-        console.log(users);
         loadUsers(users);
        }
     catch(err){
-        console.log(err);
         const userList = document.createElement("div");
         userList.className = "user-list";
         userList.innerHTML=`CHECK NETWORK`
